@@ -1,0 +1,10 @@
+/* Common.css */
+.background2{
+    background-image: url('D:\React\real_estate_management_system\src\assets\background2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:96vh;
+    /* Add more common background styles as needed */
+  }
+  

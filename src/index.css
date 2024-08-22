@@ -1,13 +1,373 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Phudu:wght@900&family=Playfair+Display&family=Sono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Black+Ops+One&family=Phudu:wght@900&family=Playfair+Display&family=Sono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Black+Ops+One&family=Chakra+Petch:wght@300&family=Phudu:wght@900&family=Playfair+Display&family=Sono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Black+Ops+One&family=Chakra+Petch:wght@300&family=Phudu:wght@900&family=Playfair+Display&family=Skranji:wght@700&family=Sono:wght@500&display=swap');
+.prehome-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+body{
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
+}
+.about-button {
+  font-family: "cursive";
+  font-size: 1.5em;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+#about
+{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5em;
+}
+#about_content{
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.2em;
+}
+
+/* Styles for the popup container */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure it's above other content */
+}
+
+/* Styles for the popup content */
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the buttons inside the popup */
+.popup-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.popup-container {
+  width: 50vw;
+  position: fixed;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 1001; /* Ensure it appears above other elements */
+  /* Add any additional styles you need */
+}
+.box{
+  width: 50vw;
+  height: 45vh;
+  /* margin-top: 5vh; */
+  /* margin-bottom: 15vh; */
+}
+#btn1:hover,
+#btn2:hover,
+#btn3:hover,
+#btn4:hover {
+  font-size: 2em; 
+  color:rgb(63, 62, 62);
+}
+.button:hover{
+  background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+  font-size: 2em;
+}
+#btn1
+{
+  font-size:2em;
+  border-radius: 10px;
+  width: 50vw;
+    font-size: 16px;
+    font-weight: 600;
+    /* background-color:rgba(47, 216, 146, 0.75); */
+    cursor: pointer;
+    height: 45vh;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    font-family: 'Phudu', cursive;
+}
+#btn2
+{
+  font-size:2em;
+  border-radius: 10px;
+  width: 50vw;
+    font-size: 16px;
+    font-weight: 600;
+    /* background-color:rgba(243, 236, 176, 0.795); */
+    cursor: pointer;
+    height: 45vh;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    font-family: 'Phudu', cursive;
+}
+#btn3
+{
+  font-size:2em;
+  border-radius: 10px;
+  width: 50vw;
+    font-size: 16px;
+    font-weight: 600;
+    /* background-color:rgba(243, 236, 176, 0.795); */
+    cursor: pointer;
+    height: 45vh;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    font-family: 'Phudu', cursive;
+}
+#btn4
+{
+  font-size:2em;
+  border-radius: 10px;
+  width: 50vw;
+    font-size: 16px;
+    font-weight: 600;
+    /* background-color:rgba(243, 236, 176, 0.795); */
+    cursor: pointer;
+    height: 45vh;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    font-family: 'Phudu', cursive;
+}
+.button:hover{  
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.user-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+}
+
+.user-details-dialog {
+  background-color: #f0f0f0; /* Set your desired background color */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  text-align: center;
+}
+
+.user-details-dialog h1 {
+  color: #333; /* Set your desired text color */
+}
+
+.edit-button,
+.close-button {
+  background-color: #007bff; /* Set your desired button background color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover,
+.close-button:hover {
+  background-color: #0056b3; /* Change the button background color on hover */
+}
+#property-details-container {
+  text-align: center;
+}
+
+.property-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#property-details-container
+{
+  overflow: auto; 
+}
+.property-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f0f0f0; /* Set your desired background color */
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  font-size: 16px; /* Set your desired font size */
+
+}
+
+.property-item div {
+  flex: 1;
+  text-align: left;
+}
+
+.property-divider {
+  border: none;
+  border-top: 1px solid #ccc; /* Set your desired divider color */
+  margin-top: 10px;
+}
+#transaction-details-container {
+  text-align: center;
+  overflow: auto; 
+}
+
+.transaction-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f0f0f0; /* Set your desired background color */
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  font-size: 16px; /* Set your desired font size */
+}
+
+.transaction-item div {
+  flex: 1;
+  text-align: left;
+}
+
+.transaction-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+}
+#properties-container {
+  text-align: center;
+  overflow: auto; 
+  
+}
+.head{
+  font-family: 'Black Ops One', cursive;
+  font-size: 2.5em;
+}
+.property {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #9beced;
+    /* display: inline-block; Center content horizontally */
+    vertical-align: middle; /* Center content vertically */
+}
+
+.property-details {
+  text-align: left;
+}
+
+.field-name {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.property button {
+  background-color: #f57494; /* Change to your desired background color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Hover effect for the Buy button */
+.property button:hover {
+  background-color: #f70a2d; /* Change to your desired hover background color */
+}
+.property-details,.property-list,.fontcon,.transaction-list
+{
+  font-size: 1.5em;
+  font-family: 'Chakra Petch', sans-serif;
+}
+#name
+{
+  font-family: 'Skranji', cursive;
+}
+
+#logo
+{
+  width: 30em;
+  height: 10vh;
+  transition: transform .7s ease-in-out;
+}
+#logo:hover {
+  transform: rotate(360deg);
+}
+.btnname
+{
+  font-family: 'Orbitron', sans-serif;
+  color:"secondary";
+}
+.signtext
+{
+  font-size: 1.2em;
+  font-family: cursive;
+}
+.inputfield{
+  background-color: #e3e0e0;
+  /* border: 3px solid #f55858; */
+  border-radius: 5px;
+  font-size:0.8em;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.inbtn
+{
+  font-size: 1.2em;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
